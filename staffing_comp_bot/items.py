@@ -8,7 +8,7 @@
 from scrapy.item import Item, Field
 
 
-class StaffingCompBotItem(scrapy.Item):
+class StaffingCompBotItem(Item):
     name = Field()
     address = Field()
     telephone = Field()
