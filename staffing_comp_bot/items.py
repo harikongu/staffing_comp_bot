@@ -9,6 +9,10 @@ import scrapy
 
 
 class StaffingCompBotItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    name = Field()
+    address = Field()
+    telephone = Field()
+    fax = Field()
+    email = Field()
+    website = Field()
+

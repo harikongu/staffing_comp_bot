@@ -8,4 +8,10 @@
 
 class StaffingCompBotPipeline(object):
     def process_item(self, item, spider):
+        if item['telephone']:
+            item['telephone'] = [item['telephone'][0].replace('Telephone:', '')]
+        if item['fax']:
+            item['fax'] = [item['fax'][0].replace('Fax:', '')]
+        if item['email']:
+            item['email'] = [item['email'][0].replace('mailto:', '')]
         return item
